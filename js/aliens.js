@@ -10,51 +10,49 @@ const ALIEN_DATA = [
         id: "EXERTIANS",
         title: "EXERTIANS",
         image: "assets/aliens/exertians.png",
-        color: "#E84D5B",
+        color: "#E84D5B"
     },
     {
         id: "ANOMALIES",
         title: "ANOMALIES",
         image: "assets/aliens/anomalies.png",
-        color: "#2F83C5",
+        color: "#2F83C5"
     },
     {
         id: "MASCAMITES",
         title: "MASCAMITES",
         image: "assets/aliens/mascamites.png",
-        color: "#D7B04A",
+        color: "#D7B04A"
     },
     {
         id: "AMOEBA",
         title: "AMOEBA",
         image: "assets/aliens/amoeba.png",
-        color: "#D94D9A",
-        description:
+        color: "#D94D9A"
     },
     {
         id: "CENTAURIANS",
         title: "CENTAURIANS",
         image: "assets/aliens/centaurians.png",
-        color: "#2E9D7F",
+        color: "#2E9D7F"
     },
     {
         id: "ARKHOS",
         title: "ARKHOS",
         image: "assets/aliens/arkhos.png",
-        color: "#607A95",
-        description:
+        color: "#607A95"
     },
     {
         id: "GLYPHIDS",
         title: "GLYPHIDS",
         image: "assets/aliens/glyphids.png",
-        color: "#9AD92A",
+        color: "#9AD92A"
     },
     {
         id: "'OUMUAMUA",
         title: "'OUMUAMUA",
         image: "assets/aliens/oumuamua.png",
-        color: "#7352A5",
+        color: "#7352A5"
     }
 ];
 /* ========================================================== */
