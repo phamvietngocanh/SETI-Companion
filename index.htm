@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SETI Companion</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/alien.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- ========================= -->
+    <!-- HOME -->
+    <!-- ========================= -->
+
+    <section id="page-home" class="page active">
+
+        <div class="menu">
+
+            <button id="btnSolar" class="menu-button">
+                ☀️ Solar System
+            </button>
+
+            <button id="btnGoals" class="menu-button">
+                🎯 Goals
+            </button>
+
+            <button id="btnAliens" class="menu-button">
+                👽 Aliens
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SOLAR -->
+    <!-- ========================= -->
+
+    <section id="page-solar" class="page">
+
+        <button class="back-button">
+            ← Back
+        </button>
+
+        <div id="solar-content">
+
+            <!-- Filled by solar.js -->
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- GOALS -->
+    <!-- ========================= -->
+
+    <section id="page-goals" class="page">
+
+        <button class="back-button">
+            ← Back
+        </button>
+
+        <div id="goals-content">
+
+            <!-- Filled by goals.js -->
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ALIENS -->
+    <!-- ========================= -->
+
+    <section id="page-aliens" class="page">
+
+        <button class="back-button">
+            ← Back
+        </button>
+
+        <div id="alien-content">
+
+            <!-- Filled by alien.js -->
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/alien.js"></script>
+<script src="js/solar.js"></script>
+<script src="js/goals.js"></script>
+
+</body>
+</html>
