@@ -36,38 +36,27 @@ const ALIEN_DATA = [
         title: "CENTAURIANS",
         image: "assets/aliens/centaurians.png",
         color: "#2E9D7F",
-        description:
-            "A civilisation believed to originate from Alpha Centauri, famous for diplomatic contact."
     },
-
     {
         id: "ARKHOS",
         title: "ARKHOS",
         image: "assets/aliens/arkhos.png",
         color: "#607A95",
         description:
-            "A machine civilisation whose transmissions resemble compressed mathematical proofs."
     },
-
     {
         id: "GLYPHIDS",
         title: "GLYPHIDS",
         image: "assets/aliens/glyphids.png",
         color: "#9AD92A",
-        description:
-            "Organic hive organisms communicating through repeating geometric patterns."
     },
-
     {
         id: "'OUMUAMUA",
         title: "'OUMUAMUA",
         image: "assets/aliens/oumuamua.png",
         color: "#7352A5",
-        description:
-            "An interstellar visitor whose true origin remains one of astronomy's greatest mysteries."
     }
 ];
-
 /* ========================================================== */
 
 let alienInitialized = false;
@@ -154,13 +143,10 @@ function createAlienLayout() {
         >
             👽👽👽👽👽👽👽👽
         </div>
-
+        </div>
     </div>
-
 </div>
-
 `;
-
 }
 /* ========================================================== */
 
@@ -459,13 +445,6 @@ resultContainer.innerHTML = `
         src="${alien.image}"
         alt="${alien.title}"
     >
-
-</div>
-
-<div class="alien-description">
-
-    ${alien.description}
-
 </div>
 `;
     }, 2400);
@@ -498,23 +477,3 @@ function getAlienById(id) {
     );
 
 }
-
-/*
-==============================================================
-Future expansion
-==============================================================
-
-Có thể bổ sung sau:
-
-- Search alien
-- Filter theo expansion
-- Popup mô tả đầy đủ
-- Probability mode
-- History
-- Favourite aliens
-- Sound effects
-- Dark scanner animation
-- Encyclopedia
-
-==============================================================
-*/
