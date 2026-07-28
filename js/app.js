@@ -36,19 +36,18 @@ function showPage(pageName) {
                 initGoalsPage();
             }
             break;
-case "firstplayer":
-    initFirstPlayerPage();
+        case "firstplayer":
+            if (typeof initGoalsPage === "function") {
+                initFirstPlayerPage();
+    }
     break;
         case "aliens":
             if (typeof initAlienPage === "function") {
                 initAlienPage();
             }
             break;
-
     }
-
 }
-
 /* ===================================================== */
 /* HOME BUTTONS                                           */
 /* ===================================================== */
