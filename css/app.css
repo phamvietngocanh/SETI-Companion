@@ -1,19 +1,22 @@
 /* =======================================================
    SETI Companion
    Global Styles
-   ======================================================= */
+======================================================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html,
-body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+body{
+
+    width:100%;
+    min-height:100%;
+
+    overflow-x:hidden;
+    overflow-y:auto;
 
     font-family:
         "Segoe UI",
@@ -21,102 +24,117 @@ body {
         Arial,
         sans-serif;
 
-    color: white;
+    color:white;
+
 }
 
-body {
-    background: url("../assets/background/IMG_1007.jpeg")
+body{
+
+    background:
+        url("../assets/background/IMG_1007.jpeg")
         center center / cover
         no-repeat fixed;
+
 }
 
 /* ============================= */
 
-#app {
-    width: 100%;
-    height: 100%;
-    position: relative;
+#app{
+
+    width:100%;
+    min-height:100vh;
+
+    position:relative;
+
 }
 
 /* ============================= */
 
-.page {
-    display: none;
+.page{
 
-    width: 100%;
-    height: 100%;
+    display:none;
 
-    padding: 32px;
+    width:100%;
+    min-height:100vh;
 
-    animation: fadeIn .25s ease;
+    padding:32px;
+
+    animation:fadeIn .25s ease;
+
 }
 
-.page.active {
-    display: flex;
-    flex-direction: column;
+.page.active{
+
+    display:flex;
+    flex-direction:column;
+
 }
 
 /* ============================= */
 /* HOME                          */
 /* ============================= */
 
-#page-home {
-    justify-content: center;
-    align-items: center;
+#page-home{
+
+    justify-content:center;
+    align-items:center;
+
 }
 
 /* ============================= */
 
-.menu {
+.menu{
 
-    width: min(420px, 90vw);
+    width:min(420px,90vw);
 
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
 
-    gap: 20px;
+    gap:20px;
+
 }
 
 /* ============================= */
 
-.menu-button {
+.menu-button{
 
-    cursor: pointer;
+    cursor:pointer;
 
-    padding: 18px 24px;
+    padding:18px 24px;
 
-    border: none;
-    border-radius: 14px;
+    border:none;
+    border-radius:14px;
 
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size:1.15rem;
+    font-weight:700;
 
-    color: white;
+    color:white;
 
-    background: rgba(25,25,25,.72);
+    background:rgba(25,25,25,.72);
 
-    backdrop-filter: blur(8px);
+    backdrop-filter:blur(8px);
 
     transition:
         transform .18s,
         background .18s,
         box-shadow .18s;
+
 }
 
-.menu-button:hover {
+.menu-button:hover{
 
-    transform: translateY(-3px);
+    transform:translateY(-3px);
 
-    background: rgba(45,45,45,.88);
+    background:rgba(45,45,45,.88);
 
     box-shadow:
         0 8px 20px rgba(0,0,0,.35);
 
 }
 
-.menu-button:active {
+.menu-button:active{
 
-    transform: scale(.98);
+    transform:scale(.98);
 
 }
 
@@ -124,84 +142,93 @@ body {
 /* SUB PAGES                     */
 /* ============================= */
 
-.back-button {
+.back-button{
 
-    width: fit-content;
+    width:fit-content;
 
-    cursor: pointer;
+    cursor:pointer;
 
-    margin-bottom: 24px;
+    margin-bottom:24px;
 
-    padding: 12px 18px;
+    padding:12px 18px;
 
-    border: none;
-    border-radius: 10px;
+    border:none;
+    border-radius:10px;
 
-    font-size: 1rem;
-    font-weight: 600;
+    font-size:1rem;
+    font-weight:600;
 
-    color: white;
+    color:white;
 
-    background: rgba(20,20,20,.72);
+    background:rgba(20,20,20,.72);
 
-    backdrop-filter: blur(8px);
+    backdrop-filter:blur(8px);
 
-    transition: .2s;
-}
-
-.back-button:hover {
-
-    background: rgba(50,50,50,.88);
+    transition:.2s;
 
 }
 
+.back-button:hover{
+
+    background:rgba(50,50,50,.88);
+
+}
+
+/* ============================= */
+/* ROOTS                         */
 /* ============================= */
 
 #solar-root,
-#goals-root,
-#aliens-root {
+#goals-root{
 
-    flex: 1;
+    flex:1;
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#aliens-root{
+
+    flex:1;
+
+    display:block;
 
 }
 
 /* ============================= */
 
-.card {
+.card{
 
-    width: min(900px,95vw);
+    width:min(900px,95vw);
 
-    background: rgba(15,15,15,.68);
+    background:rgba(15,15,15,.68);
 
-    border-radius: 20px;
+    border-radius:20px;
 
-    backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
 
-    padding: 28px;
+    padding:28px;
+
 }
 
 /* ============================= */
 
-@keyframes fadeIn {
+@keyframes fadeIn{
 
-    from {
+    from{
 
-        opacity: 0;
-
-        transform: translateY(12px);
+        opacity:0;
+        transform:translateY(12px);
 
     }
 
-    to {
+    to{
 
-        opacity: 1;
-
-        transform: translateY(0);
+        opacity:1;
+        transform:translateY(0);
 
     }
 
