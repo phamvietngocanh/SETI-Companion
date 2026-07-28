@@ -143,7 +143,6 @@ function createAlienLayout() {
         >
             👽👽👽👽👽👽👽👽
         </div>
-        </div>
     </div>
 </div>
 `;
@@ -437,9 +436,6 @@ resultContainer.innerHTML = `
 >
     ${alien.title}
 </div>
-
-<div>
-
     <img
         class="alien-image"
         src="${alien.image}"
