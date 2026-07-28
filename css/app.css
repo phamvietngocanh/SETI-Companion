@@ -157,9 +157,9 @@ body {
 
 /* ============================= */
 
-#solar-content,
-#goals-content,
-#alien-content {
+#solar-root,
+#goals-root,
+#aliens-root {
 
     flex: 1;
 
