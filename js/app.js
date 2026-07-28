@@ -37,7 +37,7 @@ function showPage(pageName) {
             }
             break;
         case "firstplayer":
-            if (typeof initGoalsPage === "function") {
+                if (typeof initFirstPlayerPage === "function") {
                 initFirstPlayerPage();
     }
     break;
