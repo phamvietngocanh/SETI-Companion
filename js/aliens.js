@@ -5,44 +5,32 @@ Aliens Page
 Part 1 / 3
 ==============================================================
 */
-
 const ALIEN_DATA = [
     {
         id: "EXERTIANS",
         title: "EXERTIANS",
         image: "assets/aliens/exertians.png",
         color: "#E84D5B",
-        description:
-            "Masters of engineering and large scale construction. Their signals often appear highly structured."
     },
-
     {
         id: "ANOMALIES",
         title: "ANOMALIES",
         image: "assets/aliens/anomalies.png",
         color: "#2F83C5",
-        description:
-            "Unknown phenomena that resist classification. Sometimes nature imitates intelligence."
     },
-
     {
         id: "MASCAMITES",
         title: "MASCAMITES",
         image: "assets/aliens/mascamites.png",
         color: "#D7B04A",
-        description:
-            "Ancient beings believed to preserve enormous libraries of astronomical knowledge."
     },
-
     {
         id: "AMOEBA",
         title: "AMOEBA",
         image: "assets/aliens/amoeba.png",
         color: "#D94D9A",
         description:
-            "Primitive but adaptive lifeforms. Simple appearance, surprisingly complex behaviour."
     },
-
     {
         id: "CENTAURIANS",
         title: "CENTAURIANS",
