@@ -259,3 +259,30 @@ body{
     }
 
 }
+#page-solar{
+    padding:0;
+    overflow:hidden;
+}
+
+#page-solar .back-button{
+    position:fixed;
+    top:16px;
+    left:16px;
+    z-index:9999;
+    margin:0;
+}
+
+#solar-root{
+    flex:1;
+    width:100%;
+    min-height:100dvh;
+    display:block;
+}
+
+#solar-frame{
+    display:block;
+    width:100%;
+    height:100dvh;
+    border:none;
+    background:#000;
+}

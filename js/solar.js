@@ -16,54 +16,37 @@ function initSolarPage() {
     const root = document.getElementById("solar-root");
 
     root.innerHTML = `
-        <div class="card">
+    <iframe
+        id="solar-frame"
+        src="https://seti-solarsystem.czechgames.com/"
+        title="SETI Solar System">
+    </iframe>
 
-            <h1>☀️ Solar System</h1>
+    <div
+        id="solar-fallback"
+        style="
+            display:none;
+            width:100%;
+            height:100dvh;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align:center;
+            padding:24px;
+        ">
 
-            <p style="margin:20px 0;">
-                Explore the official interactive Solar System
-                created for SETI.
-            </p>
+        <p style="margin-bottom:20px;">
+            Your browser doesn't allow the Solar System to be embedded.
+        </p>
 
-            <iframe
-                id="solar-frame"
-                src="https://seti-solarsystem.czechgames.com/"
-                title="SETI Solar System"
-                style="
-                    width:100%;
-                    height:70vh;
-                    border:none;
-                    border-radius:16px;
-                    background:#111;
-                ">
-            </iframe>
+        <button
+            id="openSolar"
+            class="menu-button">
+            🌐 Open Official Solar System
+        </button>
 
-            <div
-                id="solar-fallback"
-                style="
-                    display:none;
-                    margin-top:24px;
-                    text-align:center;
-                ">
-
-                <p style="margin-bottom:16px;">
-                    Your browser doesn't allow the Solar System
-                    to be embedded.
-                </p>
-
-                <button
-                    id="openSolar"
-                    class="menu-button">
-
-                    🌐 Open Official Solar System
-
-                </button>
-
-            </div>
-
-        </div>
-    `;
-
+    </div>
+`;
     const iframe = document.getElementById("solar-frame");
     const fallback = document.getElementById("solar-fallback");
 
