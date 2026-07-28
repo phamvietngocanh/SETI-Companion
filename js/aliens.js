@@ -439,7 +439,6 @@ resultContainer.innerHTML = `
         src="${alien.image}"
         alt="${alien.title}"
     >
-</div>
 `;
     }, 2400);
 
