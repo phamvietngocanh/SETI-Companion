@@ -131,96 +131,41 @@ function initAlienPage() {
 }
 
 /* ========================================================== */
-
 function createAlienLayout() {
 
     return `
 
-<div class="card">
+<div class="alien-page">
 
-    <h1 style="
-        text-align:center;
-        margin-bottom:24px;
-        letter-spacing:2px;
-    ">
-        👽 FIRST CONTACT SCANNER
-    </h1>
+    <div class="alien-container">
 
-    <div
-        style="
-            display:flex;
-            justify-content:center;
-        "
-    >
+        <div class="alien-wheel-wrapper">
 
-        <div
-            style="
-                position:relative;
-                width:360px;
-                height:360px;
-            "
-        >
-
-            <div
-                style="
-                    position:absolute;
-                    left:50%;
-                    top:-20px;
-                    transform:translateX(-50%);
-                    width:0;
-                    height:0;
-                    border-left:16px solid transparent;
-                    border-right:16px solid transparent;
-                    border-top:30px solid white;
-                    z-index:10;
-                "
-            ></div>
+            <div class="alien-pointer"></div>
 
             <svg
                 id="alien-wheel"
-                width="360"
-                height="360"
-                viewBox="-180 -180 360 360"
-                style="
-                    overflow:visible;
-                    transition:
-                        transform
-                        5s
-                        cubic-bezier(.17,.67,.15,1);
-                "
-            >
-            </svg>
+                class="alien-wheel"
+                width="560"
+                height="560"
+                viewBox="-280 -280 560 560"
+            ></svg>
 
         </div>
 
-    </div>
-
-    <div
-        style="
-            display:flex;
-            justify-content:center;
-            margin-top:24px;
-        "
-    >
-
         <button
             id="alien-spin"
-            class="menu-button"
+            class="menu-button alien-button"
         >
             📡 INITIATE SCAN
         </button>
 
-    </div>
-
-    <div
-        id="alien-result"
-        style="
-            margin-top:28px;
-            text-align:center;
-        "
-    >
-
-        👽👽👽👽👽👽👽👽
+        <div
+            id="alien-result"
+            class="alien-result"
+        >
+            👽👽👽👽👽👽👽👽
+        </div>
 
     </div>
 
@@ -229,7 +174,6 @@ function createAlienLayout() {
 `;
 
 }
-
 /* ========================================================== */
 
 function polarPoint(angle, radius) {
@@ -263,7 +207,7 @@ function buildAlienWheel() {
 
     const SVG_NS = "http://www.w3.org/2000/svg";
 
-    const radius = 170;
+    const radius = 260;
 
     wheelSvg.innerHTML = "";
 
@@ -312,7 +256,7 @@ Z`
 
         const labelPos = polarPoint(
             middle,
-            102
+            160
         );
 
         const text =

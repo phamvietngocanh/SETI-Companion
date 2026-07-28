@@ -1,0 +1,162 @@
+/* ==========================================================
+   ALIENS PAGE
+========================================================== */
+
+.alien-page{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    padding:24px;
+
+    box-sizing:border-box;
+}
+
+.alien-container{
+
+    width:min(1400px,100%);
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.alien-wheel-wrapper{
+
+    position:relative;
+
+    width:560px;
+    height:560px;
+
+    margin-top:20px;
+
+}
+
+.alien-pointer{
+
+    position:absolute;
+
+    left:50%;
+    top:-24px;
+
+    transform:translateX(-50%);
+
+    width:0;
+    height:0;
+
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    border-top:38px solid white;
+
+    z-index:20;
+
+}
+
+.alien-wheel{
+
+    overflow:visible;
+
+    transition:
+        transform
+        5s
+        cubic-bezier(.17,.67,.15,1);
+
+}
+
+.alien-button{
+
+    margin-top:28px;
+
+}
+
+.alien-result{
+
+    margin-top:34px;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.alien-title{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border-radius:18px;
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+}
+
+.alien-image{
+
+    width:min(520px,90vw);
+
+    margin-top:24px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.45);
+
+}
+
+.alien-description{
+
+    margin:28px auto 0;
+
+    max-width:900px;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+@media (max-width:900px){
+
+    .alien-wheel-wrapper{
+
+        width:420px;
+        height:420px;
+
+    }
+
+    .alien-title{
+
+        font-size:34px;
+
+    }
+
+    .alien-image{
+
+        width:min(360px,92vw);
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .alien-wheel-wrapper{
+
+        width:320px;
+        height:320px;
+
+    }
+
+}
