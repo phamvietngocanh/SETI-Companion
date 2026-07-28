@@ -9,6 +9,7 @@ const pages = {
     home: document.getElementById("page-home"),
     solar: document.getElementById("page-solar"),
     goals: document.getElementById("page-goals"),
+    firstplayer: document.getElementById("page-firstplayer"),
     aliens: document.getElementById("page-aliens")
 };
 
@@ -35,7 +36,9 @@ function showPage(pageName) {
                 initGoalsPage();
             }
             break;
-
+case "firstplayer":
+    initFirstPlayerPage();
+    break;
         case "aliens":
             if (typeof initAlienPage === "function") {
                 initAlienPage();
@@ -65,7 +68,13 @@ document
         showPage("goals");
 
     });
+document
+    .getElementById("btnFirstPlayer")
+    .addEventListener("click", () => {
 
+        showPage("firstplayer");
+
+    });
 document
     .getElementById("btnAliens")
     .addEventListener("click", () => {
