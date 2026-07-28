@@ -13,7 +13,7 @@ function initSolarPage() {
         return;
     }
 
-    const root = document.getElementById("solar-content");
+    const root = document.getElementById("solar-root");
 
     root.innerHTML = `
         <div class="card">
