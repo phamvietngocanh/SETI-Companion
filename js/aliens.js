@@ -452,56 +452,34 @@ function showAlienResult(alien) {
 
     setTimeout(() => {
 
-        resultContainer.innerHTML = `
+resultContainer.innerHTML = `
 
 <div
+    class="alien-title"
     style="
-        display:inline-block;
-        padding:12px 28px;
-        border-radius:18px;
-        border:4px solid ${alien.color};
         background:${alien.color};
-        color:white;
-        font-size:38px;
-        font-weight:900;
-        letter-spacing:2px;
-        animation:fadeIn .35s ease;
+        border:4px solid ${alien.color};
     "
 >
     ${alien.title}
 </div>
 
-<div style="margin-top:22px">
+<div>
 
     <img
+        class="alien-image"
         src="${alien.image}"
         alt="${alien.title}"
-        style="
-            width:min(320px,90vw);
-            border-radius:18px;
-            box-shadow:0 8px 28px rgba(0,0,0,.45);
-            animation:fadeIn .35s ease;
-        "
     >
 
 </div>
 
-<div
-    style="
-        margin-top:24px;
-        font-size:1rem;
-        line-height:1.7;
-        max-width:700px;
-        margin-left:auto;
-        margin-right:auto;
-        color:#f2f2f2;
-    "
->
+<div class="alien-description">
+
     ${alien.description}
+
 </div>
-
 `;
-
     }, 2400);
 
     //----------------------------------------------------------
