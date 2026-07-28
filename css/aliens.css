@@ -152,17 +152,14 @@
     width:100%;
     max-width:420px;
 
+    max-height:70vh;
+
     height:auto;
 
+    object-fit:contain;
+
     margin:0 auto;
-
-    border-radius:18px;
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.45);
-
 }
-
 .alien-description{
 
     margin-top:24px;
