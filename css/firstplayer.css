@@ -64,43 +64,36 @@
     font-size:1.1rem;
 
 }
-.fp-image-wrapper{
+#fpResult{
 
-    position:relative;
+    display:flex;
 
-    display:inline-block;
+    flex-direction:column;
 
-}
+    align-items:center;
 
-#selector{
+    gap:8px;
 
-    position:absolute;
-
-    left:0;
-
-    top:0;
-
-    width:100px;
-    height:100px;
-
-    border:4px solid #ffd54a;
-
-    border-radius:12px;
-
-    opacity:0;
-
-    pointer-events:none;
+    min-height:80px;
 
 }
 
-#crown{
+#resultTitle{
 
-    position:absolute;
+    color:#bbb;
 
-    width:12%;
+    font-size:1rem;
 
-    transform:translateX(-50%);
+}
 
-    opacity:0;
+#resultColor{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    min-height:42px;
+
+    text-align:center;
 
 }
