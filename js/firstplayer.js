@@ -13,7 +13,7 @@ root.innerHTML = `
     </button>
     <div id="fpResult">
         <div id="resultTitle">
-            First Player
+            FIRST PLAYER
         </div>
         <div id="resultColor">
             -
