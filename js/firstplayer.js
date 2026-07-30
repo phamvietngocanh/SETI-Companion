@@ -32,3 +32,32 @@ function initFirstPlayerPage() {
 </div>
 `;
 }
+const crownPositions = [
+
+    { left: 11, top: 68 }, // Cam
+    { left: 35, top: 68 }, // Xanh
+    { left: 59, top: 68 }, // Trắng
+    { left: 82, top: 68 }  // Tím
+
+];
+const crown = document.getElementById("crown");
+const button = document.getElementById("launchButton");
+
+button.disabled = true;
+button.textContent = "Launching...";
+
+crown.style.opacity = 0;
+
+setTimeout(() => {
+
+    const winner = Math.floor(Math.random() * 4);
+
+    crown.style.left = crownPositions[winner].left + "%";
+    crown.style.top  = crownPositions[winner].top  + "%";
+
+    crown.style.opacity = 1;
+
+    button.disabled = false;
+    button.textContent = "🚀 Launch Again";
+
+}, 1000);
