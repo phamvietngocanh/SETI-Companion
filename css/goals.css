@@ -1,0 +1,128 @@
+/* ==========================================================
+   GOALS PAGE
+========================================================== */
+
+.goals-page{
+
+    width:100%;
+    min-height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.goals-container{
+
+    width:min(1000px,96vw);
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:28px;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+}
+
+/* ==========================================================
+   GOALS GRID
+========================================================== */
+
+.goals-grid{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/* ==========================================================
+   GOAL TILE
+========================================================== */
+
+.goal-tile{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.35);
+
+    transition:
+        transform .2s,
+        box-shadow .2s;
+
+}
+
+.goal-tile:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:
+        0 12px 28px
+        rgba(0,0,0,.45);
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.goals-button{
+
+    min-width:240px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width:900px){
+
+    .goals-container{
+
+        width:96vw;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:600px){
+
+    .goals-grid{
+
+        gap:14px;
+
+    }
+
+    .goals-button{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+}
